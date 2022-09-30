@@ -5,6 +5,22 @@
   <title>Title</title>
 </head>
 <body>
-hello world
+<div class="box"></div>
 </body>
+<style>
+  .box{
+    width: 256px;
+    height: 256px;
+    background: url("movie/run.png");
+    animation: run .4s steps(4,end)infinite;
+  }
+@keyframes run {
+  0%{
+    background-position: 0 0px;
+  }
+  0%{
+    background-position: -1024px 0;
+  }
+}
+</style>
 </html>
